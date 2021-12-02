@@ -9,7 +9,6 @@ import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
 
 @Controller
-@Log4j
 @RequestMapping("/profile/*")
 @AllArgsConstructor
 public class profileController {
@@ -20,6 +19,11 @@ public class profileController {
 	public void insert(profileVO profile) {
 		service.insert(profile);
 		
+	}
+	
+	@RequestMapping("/rogin")
+	public profileVO rogin(String id,String pw) {
+		return service.rogin(id, pw);
 	}
 
 }

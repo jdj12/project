@@ -9,8 +9,9 @@
   		insert into profile(id,pw,name,phone,address,email)
 		value(#{id},#{pw},#{name},#{phone},#{address},#{email})
   	</insert>
-  
-  	<select id="rogin">
+ 
+  	
+  	<select id="rogin" resultType="org.project.domain.profileVO">
 		select * from profile where id=#{id} and pw=#{pw}  	
   	</select>
   </mapper>

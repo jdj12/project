@@ -40,4 +40,11 @@ public class profileControllerTests {
 				.andReturn().getModelAndView().getViewName());
 		log.info("끝");
 	}
+	
+	@Test
+	public void rogin() throws Exception {
+		log.info(mockMvc.perform(MockMvcRequestBuilders.post("/profile/rogin")
+				.param("id", "1").param("pw", "2"))
+				.andReturn().getModelAndView().getViewName());
+	}
 }

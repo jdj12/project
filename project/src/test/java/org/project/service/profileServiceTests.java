@@ -28,4 +28,11 @@ public class profileServiceTests {
 		profile.setEmail("email3");
 		service.insert(profile);
 	}
+	
+	@Test
+	public void roginTest() {
+		String id="1";
+		String pw="2";
+		log.info(service.rogin(id, pw));
+	}
 }

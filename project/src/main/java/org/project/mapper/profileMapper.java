@@ -9,6 +9,5 @@ public interface profileMapper {
 	public void insert(profileVO profile);
 	
 	//로그인
-	public profileVO rogin(@Param("id")String id, @Param("pw")String pw);
-
+	public profileVO rogin(@Param("id")String id,@Param("pw")String pw);
 }

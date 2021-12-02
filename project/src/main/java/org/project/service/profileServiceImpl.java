@@ -19,5 +19,11 @@ public class profileServiceImpl implements profileService {
 		log.info("가입");
 		mapper.insert(profile);
 	}
+	
+	@Override
+	public profileVO rogin(String id,String pw) {
+		log.info("로그인");
+		return mapper.rogin(id,pw);
+	}
 
 }
