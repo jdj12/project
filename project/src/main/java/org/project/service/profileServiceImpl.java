@@ -16,13 +16,13 @@ public class profileServiceImpl implements profileService {
 
 	@Override
 	public void insert(profileVO profile) {
-		log.info("가입");
+		log.info("성공");
 		mapper.insert(profile);
 	}
 	
 	@Override
 	public profileVO rogin(String id,String pw) {
-		log.info("로그인");
+		log.info("濡쒓렇�씤");
 		return mapper.rogin(id,pw);
 	}
 

@@ -22,7 +22,7 @@ public class DBConnectionTest {
     	
         try (Connection con = ds.getConnection()) {
  
-            System.out.println("\nDBì—°ê²° ì„±ê³µ !!\n");
+            System.out.println("\nDB¿¬°á¼º°ø !!\n");
  
         } catch (Exception e) {
             e.printStackTrace();
