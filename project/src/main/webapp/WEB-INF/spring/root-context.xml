@@ -14,8 +14,8 @@
 	<!-- MariaDB JDBC DataSource -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="org.mariadb.jdbc.Driver" />
-		<property name="jdbcUrl" value="jdbc:mariadb://mit8.iptime.org.22:3306/project" />
-		<property name="username" value="root" />
+		<property name="jdbcUrl" value="jdbc:mariadb://mit8.iptime.org:1234/project" />
+		<property name="username" value="user" />
 		<property name="password" value="whwh" />
 	</bean>
     
