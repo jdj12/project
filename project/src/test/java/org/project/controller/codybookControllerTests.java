@@ -15,12 +15,12 @@ import org.springframework.web.context.WebApplicationContext;
 import lombok.Setter;
 import lombok.extern.log4j.Log4j;
 
-@WebAppConfiguration  //추가
+@WebAppConfiguration  //異붽�
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"file:src/main/webapp/WEB-INF/spring/root-context.xml",
-	"file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"}) //추가
+	"file:src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"}) //異붽�
 @Log4j
-public class basketControllerTests {
+public class codybookControllerTests {
 
 	@Setter(onMethod_= {@Autowired})
 	private WebApplicationContext ctx;
@@ -35,7 +35,7 @@ public class basketControllerTests {
 	@Test
 	public void testinput() throws Exception {
 		log.info(mockMvc.perform(MockMvcRequestBuilders.post("/basket/input")
-				.param("id", "1").param("pcode", "5").param("amount", "1")
+				.param("id", "id1").param("pcode", "5").param("amount", "1")
 				.param("color", "red").param("pname", "1").param("price", "1"))
 				.andReturn().getModelAndView().getView());
 	}

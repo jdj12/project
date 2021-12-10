@@ -3,10 +3,10 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   
-  <mapper namespace="org.project.mapper.basketMapper">
+  <mapper namespace="org.project.mapper.codybookMapper">
   
   	<insert id="input">
-  		insert into basket(id,pcode,amount,color,pname,price)
+  		insert into codybook(id,pcode,amount,color,pname,price)
 		value(#{id},#{pcode},#{amount},#{color},#{pname},#{price})
   	</insert>
  

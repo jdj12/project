@@ -2,26 +2,24 @@ package org.project.mapper;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.project.domain.basketVO;
+import org.project.domain.codybookVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import lombok.extern.log4j.Log4j;
-
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
-@Log4j
-public class basketMapperTests {
+
+public class codybookMapperTests {
 
 	@Autowired
-	basketMapper mapper;
+	codybookMapper mapper;
 	
 	@Test
 	public void testinput() {
-		basketVO basket = new basketVO();
+		codybookVO basket = new codybookVO();
 		basket.setId("1");
-		basket.setPcode(3L);
+		basket.setPcode("3");
 		basket.setAmount(1L);
 		basket.setColor("red");
 		basket.setPname("1");

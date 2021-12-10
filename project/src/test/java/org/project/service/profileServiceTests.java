@@ -20,19 +20,18 @@ public class profileServiceTests {
 	@Test
 	public void insertTest() {
 		profileVO profile = new profileVO();
-		profile.setId("id3");
-		profile.setPw("pw3");
-		profile.setName("name3");
-		profile.setPhone("phone3");
-		profile.setAddress("address3");
-		profile.setEmail("email3");
+		profile.setId("id2");
+		profile.setPw("pw2");
+		profile.setName("name2");
+		profile.setPhone("phone2");
+		profile.setAddress("address2");
 		service.insert(profile);
 	}
 	
 	@Test
 	public void roginTest() {
-		String id="1";
-		String pw="2";
+		String id="id1";
+		String pw="pw2";
 		log.info(service.rogin(id, pw));
 	}
 }

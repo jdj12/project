@@ -2,7 +2,7 @@ package org.project.service;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.project.domain.basketVO;
+import org.project.domain.codybookVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -12,20 +12,20 @@ import lombok.extern.log4j.Log4j;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 @Log4j
-public class basketServiceTests {
+public class codybookServiceTests {
 
 	@Autowired
-	basketService service;
+	codybookService service;
 	
 	@Test
 	public void inputTest() {
-		basketVO basket = new basketVO();
-		basket.setId("1");
-		basket.setPcode(4L);
-		basket.setAmount(1L);
-		basket.setColor("red");
-		basket.setPname("1");
-		basket.setPrice(1L);
-		service.input(basket);
+		codybookVO codybook = new codybookVO();
+		codybook.setId("id2");
+		codybook.setPcode("1");
+		codybook.setAmount(1L);
+		codybook.setColor("red");
+		codybook.setPname("1");
+		codybook.setPrice(1L);
+		service.input(codybook);
 	}
 }

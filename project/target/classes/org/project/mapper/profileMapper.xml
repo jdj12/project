@@ -6,8 +6,8 @@
   <mapper namespace="org.project.mapper.profileMapper">
   
   	<insert id="insert">
-  		insert into profile(id,pw,name,phone,address,email)
-		value(#{id},#{pw},#{name},#{phone},#{address},#{email})
+  		insert into profile(id,pw,name,phone,address)
+		value(#{id},#{pw},#{name},#{phone},#{address})
   	</insert>
  
   	
