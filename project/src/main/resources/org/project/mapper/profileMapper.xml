@@ -6,12 +6,20 @@
   <mapper namespace="org.project.mapper.profileMapper">
   
   	<insert id="insert">
-  		insert into profile(id,pw,name,phone,address)
-		value(#{id},#{pw},#{name},#{phone},#{address})
+  		insert into profile(id,pw,name,phone,address,email)
+		value(#{id},#{pw},#{name},#{phone},#{address},#{email})
   	</insert>
  
   	
   	<select id="rogin" resultType="org.project.domain.profileVO">
 		select * from profile where id=#{id} and pw=#{pw}  	
+  	</select>
+  	
+  	<delete id="delete">
+  		delete from profile where id=#{id} and pw=#{pw}
+  	</delete>
+  	
+  	<select id="select" resultType="org.project.domain.profileVO">
+  		select * from profile
   	</select>
   </mapper>

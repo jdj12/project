@@ -6,9 +6,16 @@
   <mapper namespace="org.project.mapper.codybookMapper">
   
   	<insert id="input">
-  		insert into codybook(id,pcode,amount,color,pname,price)
-		value(#{id},#{pcode},#{amount},#{color},#{pname},#{price})
+  		insert into codybook(bookname,id,pcode)
+		value(#{bookname},#{id},#{pcode})
   	</insert>
+  	
+  	<delete id="output">
+  		delete from codybook where bookname=#{bookname}
+  	</delete>
  
+ 	<select id="all">
+ 		select * from codybook
+ 	</select>
  
   </mapper>

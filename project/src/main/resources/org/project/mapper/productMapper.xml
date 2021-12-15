@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+   <mapper namespace="org.project.mapper.productMapper">
+  
+  	<select id="all">
+		select * from product
+  	</select>
+  	
+  	<insert id="insert">
+  		insert info product(Pcode,Pname,price,link,image) 
+  		value(#{Pcode},#{Pname},#{price},#{link},#{image})
+  	</insert>
+  	
+  	<delete id="delete">
+  		delete from product where Pcode=#{Pcdoe}
+  	</delete>
+  </mapper>
